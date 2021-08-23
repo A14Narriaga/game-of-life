@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <section className="header-container">
         <h1>Game of life</h1>
-        <ul className="options">
+        <div className="options">
           <li>
             <a href="#!">
               <FaRegPlayCircle />
@@ -28,7 +28,7 @@ const Header = () => {
               <GoGraph />
             </a>
           </li>
-        </ul>
+        </div>
       </section>
     </header>
   )

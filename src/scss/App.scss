@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import "./header";
+@import "./game";
+@import "./footer";
 
 $backgroung-color: #00445e;
 $text-color: rgb(197, 197, 197);
@@ -12,99 +15,9 @@ $text-color: rgb(197, 197, 197);
 
 body {
   background: $backgroung-color;
-  header {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 2rem;
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: $text-color;
-      h1 {
-        font-size: 2.3rem;
-        letter-spacing: 1px;
-      }
-      .options {
-        list-style: none;
-        display: flex;
-        li {
-          padding: 0.5rem;
-          background-color: $text-color;
-          border: 1px solid $backgroung-color;
-          display: flex;
-          border-radius: 50%;
-          margin-left: 0.5rem;
-          position: relative;
-          cursor: pointer;
-          &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: $backgroung-color;
-            border-radius: 50%;
-            transition: all 0.3s linear;
-            transform: scale(0);
-            opacity: 0;
-          }
-          &:hover:before {
-            transform: scale(1);
-            opacity: 1;
-            border: 1px solid $text-color;
-          }
-          &:hover a {
-            color: $text-color;
-          }
-          a {
-            color: $backgroung-color;
-            font-size: 1.3rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s linear;
-            z-index: 0;
-          }
-        }
-      }
-    }
-  }
-  footer {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 2rem;
-    .footer-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: $text-color;
-      h3 {
-        margin-bottom: 0.5rem;
-      }
-      .options {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-          margin: 0 0.3rem;
-          color: $text-color;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.8rem;
-          cursor: pointer;
-          transition: 0.5s all linear;
-          &:hover {
-            transform: rotate(360deg) scale(0.8);
-          }
-        }
-      }
-    }
-  }
+  @include header;
+  @include game;
+  @include footer;
 }
 
 @media (max-width: 485px) {

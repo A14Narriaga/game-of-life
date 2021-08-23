@@ -1,7 +1,11 @@
 import React from "react"
 
 const Game = () => {
-  return <main></main>
+  return (
+    <main>
+      <section className="container"></section>
+    </main>
+  )
 }
 
 export default Game
