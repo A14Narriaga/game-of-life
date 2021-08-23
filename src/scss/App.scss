@@ -89,7 +89,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        li {
+        a {
           margin: 0 0.3rem;
           color: $text-color;
           display: flex;
@@ -104,5 +104,11 @@ body {
         }
       }
     }
+  }
+}
+
+@media (max-width: 485px) {
+  .header-container {
+    flex-direction: column;
   }
 }

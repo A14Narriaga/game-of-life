@@ -6,17 +6,17 @@ const Footer = () => {
     <footer>
       <section className="footer-container">
         <h3>By Alan Arriaga</h3>
-        <ul className="options">
-          <li>
+        <div className="options">
+          <a href="https://github.com/A14Narriaga">
             <AiFillGithub />
-          </li>
-          <li>
+          </a>
+          <a href="https://a14narriaga.netlify.app/">
             <FaUserCircle />
-          </li>
-          <li>
+          </a>
+          <a href="https://twitter.com/A14Narriaga">
             <AiOutlineTwitter />
-          </li>
-        </ul>
+          </a>
+        </div>
       </section>
     </footer>
   )
