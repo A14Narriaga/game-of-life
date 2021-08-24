@@ -25,3 +25,9 @@ body {
     flex-direction: column;
   }
 }
+
+@media (max-width: 1037px) {
+  .canvas-wrapper {
+    overflow: scroll;
+  }
+}
