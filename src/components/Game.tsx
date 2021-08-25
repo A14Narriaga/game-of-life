@@ -10,7 +10,7 @@ const loadGame = () => {
     const fps = 30
     // const context = canvas.getContext("2D")
     const canvasW = 944
-    const canvasH = 432
+    const canvasH = 464
     // const rows = 10
     // const cols = 10
     // const cellW = Math.floor(canvasW / rows)
